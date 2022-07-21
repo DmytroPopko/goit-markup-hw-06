@@ -877,11 +877,19 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background: var(--primary-white-color);
     border: 1px solid rgba(0, 0, 0, 0.1); 
+}
+
+.modal-button:hover,
+.modal-button:focus {
+    fill: var(--accent-color);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title-form {
@@ -1037,12 +1045,9 @@ img {
 
     border: 2px solid var(--primary-text-color);
     border-radius: 4px;
-
-    /* transition: transform 250ms linear; */
 }
 
 .checkbox:checked + .icon {
-
     border-color: transparent;
     background-color: var(--accent-color);
     background-image: url('../images/full-check.svg');
@@ -1056,7 +1061,7 @@ img {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    margin-right: 2px;
+    margin-right: 5px;
 }
 
 .checkbox-link {
