@@ -941,13 +941,6 @@ img {
     border-radius: 4px;
 }
 
-.form-field input:hover,
-.form-field input:focus {
-    border: 1px solid var(--accent-color);
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-field textarea:hover,
 .form-field textarea:focus {
     border: 1px solid var(--accent-color);
     outline: transparent;
@@ -1003,14 +996,12 @@ img {
     display: inline-block;
 }
 
-.form-input:hover,
 .form-input:focus {
     border: 1px solid var(--accent-color);
     outline: transparent;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:hover ~.modal-icon,
 .form-input:focus ~.modal-icon {
     fill: var(--accent-color);
 
